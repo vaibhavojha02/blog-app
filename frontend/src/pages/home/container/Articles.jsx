@@ -9,7 +9,7 @@ const Articles = () => {
         <Articlecard className="w-full md:w-[calc(50%-20px)] lg:w-[calc(33.33%-20px)]" />
         <Articlecard className="w-full md:w-[calc(50%-20px)] lg:w-[calc(33.33%-20px)]" />
       </div>
-      <button className="mx-auto  flex  items-center gap-x-2 font-bold text-primary border-2 border-primary px-6 py-3 rounded-lg">
+      <button className="mx-auto  flex  items-center gap-x-2 font- bg-gradient-to-r from-blue-800 to-indigo-900 text-white border-2  px-6 py-3 rounded-lg">
         <span>More Articles</span>
         <FaArrowRight className="w-3 h-3" />
       </button>
