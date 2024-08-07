@@ -19,7 +19,7 @@ const Navitems = ({ item,index }) =>
     });
   };
   return (
-    <li className="relative group">
+    <li key= {index} className="relative group">
       {item.type === "link" ? (
         <>
           <a key={index}  href="" className="px-4 py-2">

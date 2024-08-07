@@ -4,6 +4,7 @@ import avatarImage from "../assets/cfbe982e7b6e6243d8ff43b0c3168634.jpeg";
 import CTa from "../assets/alexander-shatov-CTZhGbSxWLI-unsplash 1.jpg";
 
 
+
 const images = {
   heroImage,
   articleImage,

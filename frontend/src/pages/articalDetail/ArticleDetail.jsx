@@ -5,6 +5,7 @@ import BreadCrumbs from "../../components/BreadCrumbs";
 import images from "../../constants/images.js";
 import SuggestedArticles from "./container/SuggestedArticles.jsx";
 import { Link } from "react-router-dom";
+import Commentcontainer from "../../components/comments/Commentcontainer.jsx";
 
 const postsData = [
   {
@@ -75,6 +76,7 @@ const ArticleDetail = () => {
               faucibus et molestie ac feugiat sed lectus vestibulum.
             </p>
           </div>
+          <Commentcontainer className = "mt-10" logginedUserId="a"/>
         </article>
 
         <SuggestedArticles header="Latest Article"  posts = {postsData} tags = {tagsData} classname = "mt-8 lg:mt-0 lg:max-w-xs" />

@@ -7,7 +7,7 @@ function App() {
     <div className="app font-opensans">
     <Routes>
       <Route path="/" index element = {<HomePage/>}/>
-      <Route path="/blog/:id" index element={<ArticleDetail/>}/>
+      <Route path="/blog/:id"  element={<ArticleDetail/>}/>
     </Routes>
       
     </div>
