@@ -9,7 +9,7 @@ const itemsList = [
   { name: "Pricing", type: "link" },
   { name: "Faq", type: "link" },
 ];
-const Navitems = ({ item,index }) => 
+const Navitems = ({ item,id }) => 
 {
  
   const [dropdown, setDropDown] = useState(false);
@@ -19,10 +19,10 @@ const Navitems = ({ item,index }) =>
     });
   };
   return (
-    <li key= {index} className="relative group">
+    <li key={id} className="relative group">
       {item.type === "link" ? (
         <>
-          <a key={index}  href="" className="px-4 py-2">
+          <a   href="" className="px-4 py-2">
             {item.name}
           </a>
           <span className="cursor-pointer text-blue-500 absolute transition-all duration-500 font-bold right-0 top-0 group-hover:right-[90%] group-hover:opacity-100 opacity-0">/</span>
@@ -85,7 +85,7 @@ const Header = () => {
         >
           <ul className="text-white items-center gap-y-5 lg:text-dark-soft flex flex-col lg:flex-row gap-x-2 font-semibold">
             {itemsList.map((item, index) => (
-              <Navitems item={item} key={index} />
+              <Navitems item={item} key={index} id = {index}/>
             ))}
           </ul>
           <button className="mt-5 lg:mt-0 border-2 border-blue-500 px-6 py-2 rounded-full text-blue-500 font-semibold hover:bg-blue-500 hover:text-white transition-all duration-300">

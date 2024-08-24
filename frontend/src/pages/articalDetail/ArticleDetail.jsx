@@ -6,6 +6,7 @@ import images from "../../constants/images.js";
 import SuggestedArticles from "./container/SuggestedArticles.jsx";
 import { Link } from "react-router-dom";
 import Commentcontainer from "../../components/comments/Commentcontainer.jsx";
+import SocialShareButtons from "../../components/SocialShareButtons.jsx";
 
 const postsData = [
   {
@@ -78,8 +79,15 @@ const ArticleDetail = () => {
           </div>
           <Commentcontainer className = "mt-10" logginedUserId="a"/>
         </article>
-
+        <div>
         <SuggestedArticles header="Latest Article"  posts = {postsData} tags = {tagsData} classname = "mt-8 lg:mt-0 lg:max-w-xs" />
+        <div className="mt-7">
+           <h2 className="font-roboto font-medium text-dark-hard mb-4 md:text-xl">Share on :</h2>
+           <SocialShareButtons url = {encodeURI("https://leetcode.com/u/allahabadi_codes/")} title = {encodeURIComponent("leetcode")}/>
+        </div>
+        </div>
+
+       
       </section>
     </MainLayout>
   );
